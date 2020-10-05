@@ -1,0 +1,6 @@
+how to install
+install using (yarn install) because it's using yarn for dependencies setup
+
+tested on
+node = v12.18.4
+yarn = 1.22.10
