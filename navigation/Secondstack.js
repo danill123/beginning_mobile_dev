@@ -11,7 +11,7 @@ function Secondstack() {
     <Stack.Navigator 
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#9AC4F8",
+          backgroundColor: "#d9e4dd",
         },
         headerTintColor: "white",
         headerBackTitle: "Back",

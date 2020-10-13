@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons'; 
 
 import Mainstack from './Mainstack';
 import Secondstack from './Secondstack';
@@ -22,9 +23,9 @@ function Bottomtab() {
         name="Home" 
         component={Mainstack} 
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Beranda',
           tabBarIcon: () => (
-            <AntDesign name="bars" size={24} color="black" />
+            <AntDesign name="home" size={24} color="#555555" />
           ),
         }}
       />
@@ -32,9 +33,9 @@ function Bottomtab() {
         name="Settings" 
         component={Secondstack} 
         options={{
-          tabBarLabel: 'Settings',
+          tabBarLabel: 'Provinsi',
           tabBarIcon: () => (
-            <AntDesign name="link" size={24} color="black" />
+            <FontAwesome name="institution" size={24} color="#555555" />
           ),
         }}
       />

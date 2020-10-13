@@ -11,14 +11,14 @@ function Mainstack() {
     <Stack.Navigator 
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#9AC4F8",
+          backgroundColor: "#555555",
         },
         headerTintColor: "white",
         headerBackTitle: "Back",
       }} 
     >
       <Stack.Screen name="Home" component={CategoryMealScreen} />
-      <Stack.Screen name="Notifications" component={FiltersScreen} />
+      <Stack.Screen name="Detail Covid" component={FiltersScreen} />
     </Stack.Navigator>
   );
 }
