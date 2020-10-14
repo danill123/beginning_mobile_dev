@@ -31,7 +31,7 @@ const CategoryMealScreen = props => {
     return(
       <View style={styles.screen}>
           <View style={{marginBottom: 20}}>
-            <Card title='Data covid indo hari ini'>
+            <Card title='Data covid indo hari ini' containerStyle={{shadowColor: "black"}}>
               <Text>Dirawat : {data.dataIndoCov.dirawat} </Text>
               <Text>Meninggal : {data.dataIndoCov.meninggal} </Text>
               <Text>positif : {data.dataIndoCov.positif} </Text>
@@ -44,6 +44,13 @@ const CategoryMealScreen = props => {
             title="Go to Details"
             onPress={() => props.navigation.navigate("Detail Covid")}
           />
+
+          <View style={{marginTop: 5}}>
+            <Button
+              title="Developer profile"
+              onPress={() => props.navigation.navigate("Developer profile")}
+            />
+          </View>
       </View>
     );
   }
@@ -54,7 +61,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 15
+    padding: 15,
+    backgroundColor: 'white'
   }
 });
 

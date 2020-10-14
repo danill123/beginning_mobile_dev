@@ -2,9 +2,7 @@ import React from 'react';
 import {
   View,
   Text,
-  FlatList,
-  StyleSheet,
-  TouchableOpacity
+  StyleSheet
 } from 'react-native';
 
 const CategoriesScreen = props => {
@@ -23,7 +21,8 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'white'
   }
 });
 

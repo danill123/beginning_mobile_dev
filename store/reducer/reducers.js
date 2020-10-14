@@ -12,6 +12,8 @@ const reducers = (state = initialState, action) => {
         return {...state, dataIndoCov: action.data , errorMessage: false};
     case 'detailindo':
         return {...state, detailCovidInd: action.data, errorMessage: false};
+    case 'globalcov':
+        return {...state, globalcovid: action.data, errorMessage: false};
     case 'error':
         return {...state, errorMessage: action.data };
   }

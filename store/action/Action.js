@@ -26,3 +26,15 @@ export const detailIndo = () => {
     }
   }
 }
+
+export const GlobalCov = () => {
+  return async dispatch => {
+    try {
+      let api = await fetch('https://coronavirus-19-api.herokuapp.com/countries');
+      let data = await api.json();
+      dispatch({type: 'globalcov', data: data})
+    } catch (error) {
+      dispatch({type: 'error', data: true})
+    }
+  }
+}

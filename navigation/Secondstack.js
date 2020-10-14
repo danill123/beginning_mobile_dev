@@ -11,14 +11,14 @@ function Secondstack() {
     <Stack.Navigator 
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#d9e4dd",
+          backgroundColor: "#555555",
         },
         headerTintColor: "white",
         headerBackTitle: "Back",
       }} 
     >
-      <Stack.Screen name="Favorite" component={FavoritesScreen} />
-      <Stack.Screen name="Settings" component={MealDetailScreen} />
+      <Stack.Screen name="International" component={FavoritesScreen} />
+      <Stack.Screen name="list covid global" component={MealDetailScreen} />
     </Stack.Navigator>
   );
 }

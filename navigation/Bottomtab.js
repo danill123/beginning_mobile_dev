@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AntDesign } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons'; 
+import { Entypo } from '@expo/vector-icons'; 
 
 import Mainstack from './Mainstack';
 import Secondstack from './Secondstack';
@@ -30,12 +30,12 @@ function Bottomtab() {
         }}
       />
       <Tab.Screen 
-        name="Settings" 
+        name="International" 
         component={Secondstack} 
         options={{
-          tabBarLabel: 'Provinsi',
+          tabBarLabel: 'Internasional',
           tabBarIcon: () => (
-            <FontAwesome name="institution" size={24} color="#555555" />
+            <Entypo name="globe" size={24} color="#555555" />
           ),
         }}
       />
